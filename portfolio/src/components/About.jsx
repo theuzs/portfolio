@@ -14,15 +14,17 @@ const About = () => {
           />
           <div className="flex-1">
             <p className="text-lg mb-8">
-              I am a passionate full-stack developer with a focus on building
-              modern and responsive web applications. With a strong foundation
-              in both frontend and backend technologies, I strive to create
-              seamless and efficient user experiences.
+            I am a passionate ABAP developer with a focus on creating robust and efficient 
+            solutions for SAP systems. With a strong background in backend development and a deep understanding 
+            of ABAP best practices, I aim to optimize processes and deliver solutions tailored to users' 
+            specific needs. My goal is to enhance the performance and functionality of SAP systems, 
+            ensuring a seamless and effective user experience.
+
             </p>
             <div className="space-y-4">
               <div className="flex items-center">
                 <label htmlFor="htmlandcss" className="w-2/12">
-                  HTML & CSS
+                  ABAP
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
@@ -33,7 +35,7 @@ const About = () => {
               </div>
               <div className="flex items-center">
                 <label htmlFor="htmlandcss" className="w-2/12">
-                  React JS
+                  JavaScript
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
@@ -44,7 +46,7 @@ const About = () => {
               </div>
               <div className="flex items-center">
                 <label htmlFor="htmlandcss" className="w-2/12">
-                  Node JS
+                  UI5
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
@@ -58,14 +60,14 @@ const About = () => {
                 <div>
                     <h3 className="text-2xl font-bold text-transparent bg-clip-text 
                 bg-gradient-to-r from-green-400 to-blue-500">
-                        3+
+                        1+
                     </h3>
                     <p>Years Experience</p>
                 </div>
                 <div>
                     <h3 className="text-2xl font-bold text-transparent bg-clip-text 
                 bg-gradient-to-r from-green-400 to-blue-500">
-                        50+
+                        10+
                     </h3>
                     <p>Projects Completed</p>
                 </div>

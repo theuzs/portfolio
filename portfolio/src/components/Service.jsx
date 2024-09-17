@@ -3,35 +3,36 @@ import React from "react";
 const services = [
   {
     id: 1,
-    title: "Web Design",
-    description: "Creating visually appealing and user-friendly web designs.",
+    title: "Advanced ABAP Development",
+    description: "Expertise in SmartForms and ALV for creating customized documents and interactive data presentation.",
   },
   {
     id: 2,
-    title: "Frontend Development",
-    description: "Building responsive and interactive user interfaces.",
+    title: "User Interface Creation and Maintenance",
+    description: "Development of intuitive and effective interfaces for an enhanced user experience.",
   },
   {
     id: 3,
-    title: "Backend Development",
-    description: "Developing robust server-side logic and databases.",
+    title: "RFC Integration",
+    description: "Implementation of Remote Function Calls for efficient integration between SAP and non-SAP systems.",
   },
   {
     id: 4,
-    title: "Full-Stack Development",
-    description: "Combining both frontend and backend development skills.",
+    title: "Customization with BAPIs and Enhancement Points",
+    description: "Utilization of BAPIs, User Exits, and Enhancement Points for customizing and extending standard SAP functionalities.",
   },
   {
     id: 5,
-    title: "Content Writing",
-    description: "Writing content for your business and companies.",
+    title: "Fiori Application Development",
+    description: "Creation of List Reports, Worklists, and Fiori apps, integrated with the SAP GUI environment.",
   },
   {
     id: 6,
-    title: "Digital Marketing",
-    description: "Promote your business with our digital marketing team.",
+    title: "Data Modeling and Integration",
+    description: "Data modeling with CDS Views, integration using SAP Gateway, and development of OData services.",
   },
 ];
+
 const Service = () => {
   return (
     <div className="bg-black text-white py-20" id="service">
