@@ -1,0 +1,18 @@
+/* Navbar.css */
+.toggle-theme-button {
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.toggle-theme-button:hover {
+  transform: scale(1.05);
+}
+
+.toggle-theme-button.dark-mode {
+  background-color: #4b5563; /* Cor de fundo escuro para dark mode */
+  color: white;
+}
+
+.toggle-theme-button.light-mode {
+  background-color: #e5e7eb; /* Cor de fundo claro para light mode */
+  color: black;
+}

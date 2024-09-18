@@ -1,15 +1,40 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      setDarkMode(true);
+      document.documentElement.classList.add('dark');
+    } else {
+      setDarkMode(false);
+      document.documentElement.classList.remove('dark');
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    if (darkMode) {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+      setDarkMode(false);
+    } else {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+      setDarkMode(true);
+    }
+  };
+
   return (
-    <footer className="bg-black text-white py-8">
+    <footer className="bg-white dark:bg-black text-black dark:text-white py-8">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <div className="flex flex-col md:flex-row md:space-x-12 items-center mb-4">
           <div className="flex-1 mb-4 md:mb-0">
-            <h3 className="text-2xl font-bold mb-2">Matheus Fagundes</h3>
-            <p className="text-gray-400">
-            SAP ABAP Developer, specializing in enterprise software development and system integration.
+            <h3 className="text-2xl font-bold mb-2 text-black dark:text-white">Matheus Fagundes</h3>
+            <p className="text-black dark:text-gray-300">
+              SAP ABAP Developer, specializing in enterprise software development and system integration.
             </p>
           </div>
           <div className="flex-1 w-full">
@@ -22,8 +47,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 
-                py-2 rounded-r-lg"
+                className="bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-r-lg"
               >
                 Subscribe
               </button>
@@ -31,32 +55,29 @@ const Footer = () => {
           </div>
         </div>
 
-        <div
-          className="border-t border-gray-600 pt-4 flex flex-col md:flex-row 
-          justify-between items-center"
-        >
-          <p className="text-gray-400">
+        <div className="border-t border-gray-600 dark:border-gray-400 pt-4 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-black dark:text-gray-300">
             &copy; {new Date().getFullYear()} Matheus Fagundes. All rights reserved.
           </p>
           <div className="flex space-x-4 my-4 md:my-0">
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="#" className="text-black dark:text-gray-300 hover:text-white">
               <FaFacebook />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="#" className="text-black dark:text-gray-300 hover:text-white">
               <FaTwitter />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="#" className="text-black dark:text-gray-300 hover:text-white">
               <FaLinkedin />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="#" className="text-black dark:text-gray-300 hover:text-white">
               <FaGithub />
             </a>
           </div>
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="#" className="text-black dark:text-gray-300 hover:text-white">
               Privacy
             </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="#" className="text-black dark:text-gray-300 hover:text-white">
               Terms of Service
             </a>
           </div>
