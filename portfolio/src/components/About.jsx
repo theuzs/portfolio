@@ -1,29 +1,30 @@
 import React, { useState, useEffect } from "react";
 import AboutImage from "../assets/aboutme-image.png";
+import './Hero.css'; 
 
 const About = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     // Verifica o tema salvo no localStorage ao carregar a página
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
       setDarkMode(true);
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add("dark");
     } else {
       setDarkMode(false);
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove("dark");
     }
   }, []);
 
   const toggleTheme = () => {
     if (darkMode) {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
       setDarkMode(false);
     } else {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
       setDarkMode(true);
     }
   };
@@ -35,7 +36,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center md:space-x-12">
           <img
             src={AboutImage}
-            alt=""
+            alt="About me"
             className="w-72 h-80 rounded object-cover mb-8 md:mb-0"
           />
           <div className="flex-1">
@@ -82,27 +83,30 @@ const About = () => {
               </div>
             </div>
             <div className="mt-12 flex justify-between text-center">
-                <div>
-                    <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
-                        1+
-                    </h3>
-                    <p>Years Experience</p>
-                </div>
-                <div>
-                    <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
-                        10+
-                    </h3>
-                    <p>Projects Completed</p>
-                </div>
-                <div>
-                    <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
-                        10+
-                    </h3>
-                    <p>Happy Clients</p>
-                </div>
+              <div className="transition-transform duration-300 transform hover:scale-105">
+                <h3 className="text-2xl font-bold animated-gradient-text">
+                  1+
+                </h3>
+                <p className="animated-gradient-text">
+                  Years Experience
+                </p>
+              </div>
+              <div className="transition-transform duration-300 transform hover:scale-105">
+                <h3 className="text-2xl font-bold animated-gradient-text">
+                  10+
+                </h3>
+                <p className="animated-gradient-text">
+                  Projects Completed
+                </p>
+              </div>
+              <div className="transition-transform duration-300 transform hover:scale-105">
+                <h3 className="text-2xl font-bold animated-gradient-text">
+                  10+
+                </h3>
+                <p className="animated-gradient-text">
+                  Happy Clients
+                </p>
+              </div>
             </div>
           </div>
         </div>

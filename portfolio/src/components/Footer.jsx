@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"; 
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
@@ -42,8 +42,8 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your email"
-                className="w-full p-2 rounded-l-lg bg-gray-800 border border-gray-600 
-                focus:outline-none focus:border-green-400"
+                className="w-full p-2 rounded-l-lg bg-gray-200 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 
+                focus:outline-none focus:border-green-400 dark:focus:border-green-400"
               />
               <button
                 type="submit"
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-600 dark:border-gray-400 pt-4 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-gray-300 dark:border-gray-600 pt-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-black dark:text-gray-300">
             &copy; {new Date().getFullYear()} Matheus Fagundes. All rights reserved.
           </p>

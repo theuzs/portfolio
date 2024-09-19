@@ -1,28 +1,29 @@
 import React from "react";
-import employeeMSImage from "../assets/employee-ms.png";
-import bookMSImage from "../assets/admin-dashboard.png";
+import Fiori_Elements from "../assets/fiori_elements.png";
+import Fiori_Freestyle from "../assets/fiori_freestyle.png";
+import Git from "../assets/git.png";
 
 const projects = [
   {
     id: 1,
-    name: "Employee MS",
-    technologies: "MERN Stack",
-    image: employeeMSImage,
-    github: "https://github.com/YouafKhan1",
+    name: "Sales Order Printing",
+    technologies: "Fiori Elements",
+    image: Fiori_Elements, 
+    github: "https://github.com/theuzs/Fiori_Elements/tree/main/zui5.relatorio.impressao",
   },
   {
     id: 2,
-    name: "Blog App",
-    technologies: "MERN Stack",
-    image: bookMSImage,
-    github: "https://github.com/YouafKhan1",
+    name: "Sales Order Printing + WorkList",
+    technologies: "Fiori Freestyle",
+    image: Fiori_Freestyle,
+    github: "https://github.com/theuzs/Fiori_Freestyle/tree/main/worklist.freestyle",
   },
   {
     id: 3,
-    name: "Book MS",
-    technologies: "MERN Stack",
-    image: employeeMSImage,
-    github: "https://github.com/YouafKhan1",
+    name: "GitHub",
+    technologies: "GIT",
+    image: Git,
+    github: "https://github.com/theuzs",
   },
 ];
 
