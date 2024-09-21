@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"; 
-import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -60,16 +60,13 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Matheus Fagundes. All rights reserved.
           </p>
           <div className="flex space-x-4 my-4 md:my-0">
-            <a href="#" className="text-black dark:text-gray-300 hover:text-white">
-              <FaFacebook />
+          <a href="https://api.whatsapp.com/send?phone=5564992855573&text=Ol%C3%A1%20Matheus,%20tem%20um%20minuto%20?" className="text-black dark:text-gray-300 hover:text-white" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp />
             </a>
-            <a href="#" className="text-black dark:text-gray-300 hover:text-white">
-              <FaTwitter />
-            </a>
-            <a href="#" className="text-black dark:text-gray-300 hover:text-white">
+            <a href="https://www.linkedin.com/in/matheus-fagundes-14a533218?" className="text-black dark:text-gray-300 hover:text-white" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
-            <a href="#" className="text-black dark:text-gray-300 hover:text-white">
+            <a href="https://github.com/theuzs" className="text-black dark:text-gray-300 hover:text-white" target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
           </div>
