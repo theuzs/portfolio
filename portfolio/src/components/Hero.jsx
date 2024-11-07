@@ -1,7 +1,6 @@
 import React from 'react';
 import HeroImage from '../assets/hero-image.png';
 import './Hero.css'; 
-import resumeFile from '../assets/SAP 2025 EN - Matheus Fagundes.pdf'; // Importe o arquivo do currículo
 
 const Hero = () => {
   return (
@@ -35,17 +34,11 @@ const Hero = () => {
                 Contact With Me
               </button>
             </a>
-            <a 
-          href={resumeFile} 
-          download="Matheus_Fagundes_Resume.pdf"  // Nome do arquivo que será baixado
-        >
-          <button
-            className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white transform transition-transform duration-300 hover:scale-105 px-6 py-3 rounded-full"
-            aria-label="Download my Resume"
-          >
-            Download my Resume
-          </button>
-        </a>
+            <button
+              className='bg-gradient-to-r from-pink-500 to-yellow-500 text-white
+              transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>
+              Resume
+            </button>
         </div>
     </div>
   );
