@@ -1,50 +1,27 @@
 import React from "react";
-import Fiori_Elements from "../assets/fiori_elements.png";
-import Fiori_Freestyle from "../assets/fiori_freestyle.png";
-import Git from "../assets/git.png";
-
-const projects = [
-  {
-    id: 1,
-    name: "Sales Order Printing",
-    technologies: "Fiori Elements",
-    image: Fiori_Elements, 
-    github: "https://github.com/theuzs/Fiori_Elements/tree/main/zui5.relatorio.impressao",
-  },
-  {
-    id: 2,
-    name: "Sales Order Printing + WorkList",
-    technologies: "Fiori Freestyle",
-    image: Fiori_Freestyle,
-    github: "https://github.com/theuzs/Fiori_Freestyle/tree/main/worklist.freestyle",
-  },
-  {
-    id: 3,
-    name: "GitHub",
-    technologies: "GIT",
-    image: Git,
-    github: "https://github.com/theuzs",
-  },
-];
+import { FaGithub } from "react-icons/fa";
+import { useLanguage } from '../context/LanguageContext';
 
 const Projects = () => {
+  const { t } = useLanguage();
+
   return (
-    <div className="bg-white dark:bg-black text-black dark:text-white py-20" id="project">
+    <div className="bg-paper-100 dark:bg-ink-800 text-ink-900 dark:text-white py-20" id="project">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
-        <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <div key={project.id} className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg hover:shadow-lg 
-            transform transition-transform duration-300 hover:scale-105">
-              <img src={project.image} alt={project.name} className="rounded-lg mb-4 
-              w-full h-48 object-cover" />
-              <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">{project.technologies}</p>
-              <a href={project.github} className="inline-block bg-gradient-to-r 
-              from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
-              rel="noopener noreferrer">GitHub</a>
-            </div>
-          ))}
+        <div className="bg-gradient-to-r from-primary-600 to-primary-800 text-white rounded-2xl p-10 md:p-14 text-center shadow-xl">
+          <FaGithub className="text-5xl mx-auto mb-4" />
+          <h2 className="text-3xl font-bold mb-3">{t.projects.title}</h2>
+          <p className="text-primary-100 max-w-2xl mx-auto mb-6">
+            {t.projects.description}
+          </p>
+          <a
+            href="https://github.com/theuzs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-white text-primary-700 font-semibold px-6 py-3 rounded-full transform transition-transform duration-300 hover:scale-105"
+          >
+            {t.projects.cta}
+          </a>
         </div>
       </div>
     </div>
