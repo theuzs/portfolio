@@ -23,6 +23,7 @@ export const translations = {
       talk: 'Fale Comigo',
       resume: 'Baixar Currículo',
       photoAlt: 'Matheus Fagundes, Desenvolvedor SAP ABAP & Fiori',
+      availability: 'Aberto a novas oportunidades',
     },
     about: {
       title: 'Sobre Mim',
@@ -49,6 +50,7 @@ export const translations = {
           period: 'Fev/2025 — Atual',
           project: 'Projeto: VALE — Módulo EHS (S/4HANA)',
           isCurrent: true,
+          challenge: 'O Desafio: o standard SAP não cobria as regras específicas do módulo EHS para o negócio da VALE — foi preciso desenhar soluções customizadas do zero, unindo backend ABAP e frontend Fiori, sem perder o cronograma agressivo rumo ao Go-Live.',
           bullets: [
             'Atuação em projeto estratégico de grande porte para a VALE em ambiente S/4HANA, módulo EHS, com Go Live previsto para junho de 2026.',
             'Desenvolvimento de soluções customizadas para demandas não cobertas pelo standard SAP, atuando no backend ABAP e no frontend Fiori/UI5.',
@@ -63,6 +65,7 @@ export const translations = {
           period: 'Jan/2023 — Fev/2025 · Goiânia e Região',
           project: null,
           isCurrent: false,
+          challenge: 'O Desafio: processos legados em ABAP precisavam de uma camada de UX moderna sem interromper operações já em produção — a ponte entre o SAP GUI clássico e o Fiori teve que ser construída com cuidado.',
           bullets: [
             'Desenvolvimento e consultoria SAP ABAP, com foco em manutenção e evolução de soluções existentes.',
             'Desenvolvimento de relatórios ALV, SmartForms, telas customizadas e ajustes em programas ABAP.',
@@ -94,6 +97,15 @@ export const translations = {
         'Creating an SAP Fiori Elements App Based on an OData V4 RAP Service',
         'Learning the Basics of ABAP Programming on SAP BTP',
         'Getting Started with Web Development',
+      ],
+    },
+    articles: {
+      title: 'Notas Técnicas',
+      items: [
+        {
+          title: 'Fiori Elements sobre RAP: o que aprendi construindo minha primeira app',
+          excerpt: 'Uma das coisas que mais me chamou atenção ao migrar do Fiori Freestyle para o Fiori Elements foi o quanto o resultado final depende das anotações CDS, não do código de tela em si. Ao expor uma Business Object via RAP (RESTful ABAP Programming Model) com um serviço OData V4, boa parte do List Report e do Object Page já sai pronta a partir de annotations como @UI.lineItem, @UI.selectionField e @UI.identification.\n\nO ponto que mais exigiu atenção foi a Behavior Definition: tratar ações, determinações e validações no nível certo evita duplicar lógica de negócio que já deveria estar no backend. Também aprendi que testar o serviço direto no Business Application Studio, antes de plugar a UI, economiza um tempo enorme de debug — problemas de anotação ficam muito mais claros olhando o metadata do que a tela renderizada.\n\nResultado: uma aplicação List Report + Object Page funcional, com menos código de frontend do que eu esperava, e uma base muito mais fácil de manter.',
+        },
       ],
     },
     projects: {
@@ -145,8 +157,9 @@ export const translations = {
       tagline: 'UI5 & Fiori Elements · S/4HANA · EHS — I build custom SAP solutions, from ABAP backend to Fiori frontend, on large-scale corporate projects.',
       badges: ['S/4HANA', 'ABAP', 'Fiori & UI5', 'EHS'],
       talk: 'Contact Me',
-      resume: 'Download Resume',
+      resume: 'Download Resume (PT)',
       photoAlt: 'Matheus Fagundes, SAP ABAP & Fiori Developer',
+      availability: 'Open to new opportunities',
     },
     about: {
       title: 'About Me',
@@ -173,6 +186,7 @@ export const translations = {
           period: 'Feb/2025 — Present',
           project: 'Project: VALE — EHS Module (S/4HANA)',
           isCurrent: true,
+          challenge: "The Challenge: SAP standard didn't cover EHS-specific business rules for VALE's operations — custom solutions had to be designed from scratch, spanning ABAP backend and Fiori frontend, without slipping the project's aggressive Go-Live timeline.",
           bullets: [
             'Working on a large-scale strategic project for VALE in an S/4HANA environment, EHS module, with Go Live planned for June 2026.',
             'Development of custom solutions for requirements not covered by SAP standard, working across ABAP backend and Fiori/UI5 frontend.',
@@ -187,6 +201,7 @@ export const translations = {
           period: 'Jan/2023 — Feb/2025 · Goiânia Region',
           project: null,
           isCurrent: false,
+          challenge: 'The Challenge: legacy ABAP processes needed a modern UX layer without disrupting operations already in production — bridging classic SAP GUI and Fiori had to be done carefully.',
           bullets: [
             'SAP ABAP development and consulting, focused on maintaining and evolving existing solutions.',
             'Development of ALV reports, SmartForms, custom screens, and adjustments to ABAP programs.',
@@ -218,6 +233,15 @@ export const translations = {
         'Creating an SAP Fiori Elements App Based on an OData V4 RAP Service',
         'Learning the Basics of ABAP Programming on SAP BTP',
         'Getting Started with Web Development',
+      ],
+    },
+    articles: {
+      title: 'Technical Notes',
+      items: [
+        {
+          title: 'Fiori Elements on RAP: what I learned building my first app',
+          excerpt: "One thing that stood out moving from Fiori Freestyle to Fiori Elements is how much the final result depends on CDS annotations rather than screen code. Exposing a Business Object via RAP (RESTful ABAP Programming Model) with an OData V4 service, most of the List Report and Object Page comes ready-made from annotations like @UI.lineItem, @UI.selectionField, and @UI.identification.\n\nThe part that needed the most care was the Behavior Definition: handling actions, determinations, and validations at the right level avoids duplicating business logic that should already live in the backend. I also learned that testing the service directly in Business Application Studio, before wiring up the UI, saves a huge amount of debugging time — annotation issues are much clearer in the metadata than in the rendered screen.\n\nResult: a working List Report + Object Page app, with less frontend code than I expected, and a much easier base to maintain.",
+        },
       ],
     },
     projects: {

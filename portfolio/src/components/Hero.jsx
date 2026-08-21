@@ -9,6 +9,13 @@ const Hero = () => {
 
   return (
     <div id="home" className='bg-paper-50 dark:bg-ink-900 text-ink-900 dark:text-white text-center pt-32 pb-16 px-6'>
+        <span className='inline-flex items-center gap-2 mb-6 px-3 py-1 rounded-full text-sm font-medium bg-green-50 text-green-700 dark:bg-green-900/30 dark:text-green-300 border border-green-200 dark:border-green-800'>
+          <span className='relative flex h-2 w-2'>
+            <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75'></span>
+            <span className='relative inline-flex rounded-full h-2 w-2 bg-green-500'></span>
+          </span>
+          {t.hero.availability}
+        </span>
         <img
           src={HeroImage}
           alt={t.hero.photoAlt}

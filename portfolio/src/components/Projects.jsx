@@ -6,7 +6,7 @@ const Projects = () => {
   const { t } = useLanguage();
 
   return (
-    <div className="bg-paper-100 dark:bg-ink-800 text-ink-900 dark:text-white py-20" id="project">
+    <div className="bg-paper-50 dark:bg-ink-900 text-ink-900 dark:text-white py-20" id="project">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <div className="bg-gradient-to-r from-primary-600 to-primary-800 text-white rounded-2xl p-10 md:p-14 text-center shadow-xl">
           <FaGithub className="text-5xl mx-auto mb-4" />

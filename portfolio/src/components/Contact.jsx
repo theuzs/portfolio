@@ -18,7 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-paper-50 dark:bg-ink-900 text-ink-900 dark:text-white py-20" id="contact">
+    <div className="bg-paper-100 dark:bg-ink-800 text-ink-900 dark:text-white py-20" id="contact">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">{t.contact.title}</h2>
         <div className="flex flex-col md:flex-row items-center md:space-x-12">
