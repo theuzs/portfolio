@@ -1,6 +1,7 @@
 
 import './App.css'
 import About from './components/About'
+import Articles from './components/Articles'
 import BackToTop from './components/BackToTop'
 import Contact from './components/Contact'
 import Education from './components/Education'
@@ -16,14 +17,23 @@ function App() {
 
   return (
     <div>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-primary-600 focus:text-white focus:px-4 focus:py-2 focus:rounded"
+        >
+          Skip to content
+        </a>
         <Navbar />
-        <Hero />
-        <About />
-        <Experience />
-        <Service />
-        <Education />
-        <Projects />
-        <Contact />
+        <main id="main-content">
+          <Hero />
+          <About />
+          <Experience />
+          <Service />
+          <Education />
+          <Articles />
+          <Projects />
+          <Contact />
+        </main>
         <Footer />
         <BackToTop />
     </div>

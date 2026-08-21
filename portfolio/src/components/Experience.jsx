@@ -30,6 +30,11 @@ const Experience = () => {
               {exp.project && (
                 <p className="text-sm font-medium text-primary-700 dark:text-primary-300 mb-3">{exp.project}</p>
               )}
+              {exp.challenge && (
+                <p className="text-sm italic text-ink-700/80 dark:text-gray-400 mb-3 border-l-2 border-accent-400 pl-3">
+                  {exp.challenge}
+                </p>
+              )}
               <ul className="list-disc list-outside ml-4 space-y-1.5 text-ink-700 dark:text-gray-300">
                 {exp.bullets.map((bullet, i) => (
                   <li key={i}>{bullet}</li>
