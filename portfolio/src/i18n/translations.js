@@ -35,7 +35,7 @@ export const translations = {
         integration: 'Integração & Dados',
       },
       stats: [
-        { value: '3+', label: 'Anos em SAP' },
+        { value: '4+', label: 'Anos em SAP' },
         { value: 'S/4HANA', label: 'Projeto VALE · EHS' },
         { value: '3', label: 'Certificações SAP' },
       ],
@@ -83,6 +83,17 @@ export const translations = {
           challenge: null,
           bullets: [
             'Primeiros contatos profissionais com desenvolvimento ABAP, atuando de forma autônoma antes da entrada no mercado formal em Jan/2023.',
+          ],
+        },
+        {
+          company: null,
+          role: 'Desenvolvimento em GDScript (Godot Engine)',
+          period: '2020 — 2021',
+          project: null,
+          isCurrent: false,
+          challenge: null,
+          bullets: [
+            'Início da minha trajetória em programação desenvolvendo em GDScript, a linguagem do Godot Engine, com sintaxe próxima ao Python.',
           ],
         },
       ],
@@ -182,7 +193,7 @@ export const translations = {
         integration: 'Integration & Data',
       },
       stats: [
-        { value: '3+', label: 'Years in SAP' },
+        { value: '4+', label: 'Years in SAP' },
         { value: 'S/4HANA', label: 'VALE Project · EHS' },
         { value: '3', label: 'SAP Certifications' },
       ],
@@ -230,6 +241,17 @@ export const translations = {
           challenge: null,
           bullets: [
             'First professional contact with ABAP development, working independently before joining the formal job market in Jan/2023.',
+          ],
+        },
+        {
+          company: null,
+          role: 'GDScript Development (Godot Engine)',
+          period: '2020 — 2021',
+          project: null,
+          isCurrent: false,
+          challenge: null,
+          bullets: [
+            'Started my programming journey developing in GDScript, the Godot Engine language, with syntax close to Python.',
           ],
         },
       ],
