@@ -74,6 +74,17 @@ export const translations = {
             'Desenvolvimento de aplicações SAP Fiori (Freestyle e Fiori Elements) integradas ao backend ABAP.',
           ],
         },
+        {
+          company: null,
+          role: 'Atuação Autônoma — ABAP',
+          period: '2022',
+          project: null,
+          isCurrent: false,
+          challenge: null,
+          bullets: [
+            'Primeiros contatos profissionais com desenvolvimento ABAP, atuando de forma autônoma antes da entrada no mercado formal em Jan/2023.',
+          ],
+        },
       ],
     },
     service: {
@@ -208,6 +219,17 @@ export const translations = {
             'Implementation and support of User Exits, Enhancements, and BAdIs.',
             'Creation and consumption of OData services via SAP Gateway and data modeling with CDS Views.',
             'Development of SAP Fiori applications (Freestyle and Fiori Elements) integrated with the ABAP backend.',
+          ],
+        },
+        {
+          company: null,
+          role: 'Freelance — ABAP',
+          period: '2022',
+          project: null,
+          isCurrent: false,
+          challenge: null,
+          bullets: [
+            'First professional contact with ABAP development, working independently before joining the formal job market in Jan/2023.',
           ],
         },
       ],

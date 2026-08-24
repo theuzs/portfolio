@@ -10,7 +10,7 @@ const Experience = () => {
         <h2 className="text-4xl font-bold text-center mb-12">{t.experience.title}</h2>
         <div className="relative border-l-2 border-primary-200 dark:border-primary-800 ml-3 md:ml-0 space-y-12">
           {t.experience.jobs.map((exp) => (
-            <div key={exp.company} className="relative pl-8">
+            <div key={exp.role} className="relative pl-8">
               <span
                 className={`absolute -left-[9px] top-1.5 w-4 h-4 rounded-full border-4 border-paper-50 dark:border-ink-900 ${
                   exp.isCurrent ? "bg-accent-500" : "bg-primary-500"
@@ -18,7 +18,8 @@ const Experience = () => {
               />
               <div className="flex flex-wrap items-baseline justify-between gap-2 mb-1">
                 <h3 className="text-xl font-bold">
-                  {exp.role} <span className="text-primary-600 dark:text-primary-300">· {exp.company}</span>
+                  {exp.role}
+                  {exp.company && <span className="text-primary-600 dark:text-primary-300"> · {exp.company}</span>}
                 </h3>
                 {exp.isCurrent && (
                   <span className="text-xs font-semibold uppercase tracking-wide px-2 py-1 rounded-full bg-accent-500/20 text-accent-600 dark:text-accent-400">
