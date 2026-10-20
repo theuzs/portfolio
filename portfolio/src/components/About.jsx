@@ -9,15 +9,19 @@ const skillGroups = [
   },
   {
     key: "backend",
-    skills: ["RAP", "CDS Views", "SmartForms", "Adobe Forms", "ALV", "BAPIs", "User Exits", "Enhancements", "BAdIs"],
+    skills: ["RAP", "CDS Views", "SmartForms", "Adobe Forms", "ALV", "BAPIs", "User Exits", "Enhancements", "BAdIs", "ABAP Cloud"],
   },
   {
     key: "fiori",
-    skills: ["SAPUI5 Freestyle", "Fiori Elements", "List Reports", "Worklists", "Smart Controls", "i18n"],
+    skills: ["SAPUI5 Freestyle", "Fiori Elements", "List Reports", "Object Pages", "Worklists", "Smart Controls", "i18n"],
   },
   {
     key: "integration",
-    skills: ["SAP Gateway", "OData V2", "RFC Destinations", "REST Integration"],
+    skills: ["SAP Gateway", "OData V2/V4", "RFC Destinations", "REST Integration"],
+  },
+  {
+    key: "cloud",
+    skills: ["SAP BTP", "ABAP Cloud", "On-premise to BTP migration", "SAP Business Application Studio"],
   },
 ];
 
@@ -45,7 +49,7 @@ const About = () => {
                       key={skill}
                       className="px-3 py-1 rounded-full text-sm bg-gray-100 dark:bg-gray-800 text-ink-700 dark:text-gray-200 border border-gray-200 dark:border-gray-700"
                     >
-                      {skill}
+                      {t.about.skillLabels?.[skill] ?? skill}
                     </span>
                   ))}
                 </div>
