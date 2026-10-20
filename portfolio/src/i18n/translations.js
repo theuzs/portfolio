@@ -18,8 +18,8 @@ export const translations = {
     hero: {
       greeting: 'Olá, eu sou',
       role: 'Desenvolvedor SAP ABAP & Fiori',
-      tagline: 'UI5 & Fiori Elements · S/4HANA · EHS — desenvolvo soluções SAP customizadas, do backend ABAP ao frontend Fiori, em projetos corporativos de grande porte.',
-      badges: ['S/4HANA', 'ABAP', 'Fiori & UI5', 'EHS'],
+      tagline: 'UI5 & Fiori Elements · S/4HANA · SAP BTP — desenvolvo soluções SAP customizadas, do backend ABAP ao frontend Fiori, em projetos corporativos de grande porte.',
+      badges: ['S/4HANA', 'SAP BTP', 'ABAP', 'Fiori & UI5', 'EHS'],
       talk: 'Fale Comigo',
       resume: 'Baixar Currículo',
       photoAlt: 'Matheus Fagundes, Desenvolvedor SAP ABAP & Fiori',
@@ -33,6 +33,10 @@ export const translations = {
         backend: 'ABAP & Backend',
         fiori: 'Fiori / UI5',
         integration: 'Integração & Dados',
+        cloud: 'Cloud & Plataforma',
+      },
+      skillLabels: {
+        'On-premise to BTP migration': 'Migração on-premise para BTP',
       },
       stats: [
         { value: '4+', label: 'Anos em SAP' },
@@ -109,6 +113,7 @@ export const translations = {
         { title: 'ABAP Backend', description: 'Relatórios ALV, SmartForms, Adobe Forms, telas customizadas (Dynpro), RFCs, BAPIs e background jobs.' },
         { title: 'Enhancements & BAdIs', description: 'Implementação de User Exits, Enhancements e BAdIs para customizar e estender funcionalidades standard do SAP.' },
         { title: 'Regras de Negócio EHS', description: 'Implementação de validações e regras específicas do módulo EHS em aplicações críticas de S/4HANA.' },
+        { title: 'SAP BTP & Cloud', description: 'Migração de soluções SAP on-premise para o SAP BTP e desenvolvimento de novas aplicações nascidas na plataforma cloud.' },
       ],
     },
     education: {
@@ -178,8 +183,8 @@ export const translations = {
     hero: {
       greeting: "Hi, I'm",
       role: 'SAP ABAP & Fiori Developer',
-      tagline: 'UI5 & Fiori Elements · S/4HANA · EHS — I build custom SAP solutions, from ABAP backend to Fiori frontend, on large-scale corporate projects.',
-      badges: ['S/4HANA', 'ABAP', 'Fiori & UI5', 'EHS'],
+      tagline: 'UI5 & Fiori Elements · S/4HANA · SAP BTP — I build custom SAP solutions, from ABAP backend to Fiori frontend, on large-scale corporate projects.',
+      badges: ['S/4HANA', 'SAP BTP', 'ABAP', 'Fiori & UI5', 'EHS'],
       talk: 'Contact Me',
       resume: 'Download Resume (PT)',
       photoAlt: 'Matheus Fagundes, SAP ABAP & Fiori Developer',
@@ -193,6 +198,7 @@ export const translations = {
         backend: 'ABAP & Backend',
         fiori: 'Fiori / UI5',
         integration: 'Integration & Data',
+        cloud: 'Cloud & Platform',
       },
       stats: [
         { value: '4+', label: 'Years in SAP' },
@@ -269,6 +275,7 @@ export const translations = {
         { title: 'ABAP Backend', description: 'ALV reports, SmartForms, Adobe Forms, custom screens (Dynpro), RFCs, BAPIs, and background jobs.' },
         { title: 'Enhancements & BAdIs', description: 'Implementation of User Exits, Enhancements, and BAdIs to customize and extend standard SAP functionality.' },
         { title: 'EHS Business Rules', description: 'Implementation of EHS-module-specific validations and business rules in critical S/4HANA applications.' },
+        { title: 'SAP BTP & Cloud', description: 'Migration of on-premise SAP solutions to SAP BTP and development of new applications born on the cloud platform.' },
       ],
     },
     education: {
