@@ -14,7 +14,7 @@ const Contact = () => {
 
     const subject = encodeURIComponent(t.contact.form.mailSubject(name));
     const body = encodeURIComponent(`${message}\n\n—\n${name}\n${email}`);
-    window.location.href = `mailto:matheusfagundesmsf@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:matheus.fagundes.dev@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -30,8 +30,8 @@ const Contact = () => {
             </p>
             <div className='mb-4 mt-8'>
                 <FaEnvelope className='inline-block text-primary-500 mr-2' />
-                <a href="mailto:matheusfagundesmsf@gmail.com" className='hover:underline'>
-                    matheusfagundesmsf@gmail.com
+                <a href="mailto:matheus.fagundes.dev@gmail.com" className='hover:underline'>
+                    matheus.fagundes.dev@gmail.com
                 </a>
             </div>
             <div className='mb-4'>
