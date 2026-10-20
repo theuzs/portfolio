@@ -27,7 +27,7 @@ export const translations = {
     },
     about: {
       title: 'Sobre Mim',
-      bio: 'Desenvolvedor SAP ABAP & Fiori com experiência em projetos corporativos de grande porte, atuando principalmente em ambientes S/4HANA com foco em SAPUI5, Fiori Elements, CDS Views, OData e integrações SAP. Atualmente no Grupo Intelsis, em projeto estratégico da VALE no módulo EHS (Environment, Health and Safety), com Go Live previsto para junho de 2026. Desenvolvo soluções customizadas quando o standard SAP não atende ao negócio, atuando tanto no backend ABAP quanto no frontend Fiori/UI5.',
+      bio: 'Desenvolvedor SAP ABAP & Fiori com experiência em projetos corporativos de grande porte, atuando principalmente em ambientes S/4HANA com foco em SAPUI5, Fiori Elements, CDS Views, OData e integrações SAP. Atualmente no Grupo Intelsis, desenvolvendo a solução proprietária de SAP EHS (Environment, Health and Safety) da empresa, implantada em cliente de grande porte do setor de mineração — acompanhei o ciclo completo do desenvolvimento ao Go-Live e atuo hoje na sustentação e evolução em produção. Participo também da migração do portfólio SAP da empresa para o SAP BTP e da construção de novas aplicações cloud na plataforma. Desenvolvo soluções customizadas quando o standard SAP não atende à necessidade do negócio, atuando tanto no backend ABAP quanto no frontend Fiori/UI5.',
       groupTitles: {
         core: 'Core SAP',
         backend: 'ABAP & Backend',
@@ -36,7 +36,7 @@ export const translations = {
       },
       stats: [
         { value: '4+', label: 'Anos em SAP' },
-        { value: 'S/4HANA', label: 'Projeto VALE · EHS' },
+        { value: 'S/4HANA', label: 'Produto EHS · Produção' },
         { value: '3', label: 'Certificações SAP' },
       ],
     },
@@ -48,15 +48,17 @@ export const translations = {
           company: 'Grupo Intelsis',
           role: 'Desenvolvedor SAP ABAP / Fiori',
           period: 'Fev/2025 — Atual',
-          project: 'Projeto: VALE — Módulo EHS (S/4HANA)',
+          project: 'Solução SAP EHS Proprietária (S/4HANA)',
           isCurrent: true,
-          challenge: 'O Desafio: o standard SAP não cobria as regras específicas do módulo EHS para o negócio da VALE — foi preciso desenhar soluções customizadas do zero, unindo backend ABAP e frontend Fiori, sem perder o cronograma agressivo rumo ao Go-Live.',
+          challenge: 'O Desafio: o standard SAP não cobria as regras de negócio específicas de EHS exigidas pela operação do cliente — as soluções precisaram ser desenhadas do zero, do backend ABAP ao frontend Fiori, sem comprometer um cronograma de Go-Live agressivo.',
           bullets: [
-            'Atuação em projeto estratégico de grande porte para a VALE em ambiente S/4HANA, módulo EHS, com Go Live previsto para junho de 2026.',
+            'Desenvolvimento e evolução da solução proprietária de SAP EHS do Grupo Intelsis, implantada em cliente de grande porte do setor de mineração em ambiente S/4HANA — ciclo completo do desenvolvimento ao Go-Live e à sustentação em produção.',
+            'Migração do portfólio SAP da empresa para o SAP BTP e desenvolvimento de novas aplicações na plataforma cloud.',
             'Desenvolvimento de soluções customizadas para demandas não cobertas pelo standard SAP, atuando no backend ABAP e no frontend Fiori/UI5.',
             'Desenvolvimento de aplicações SAP Fiori/UI5 (Freestyle e Fiori Elements) com foco em usabilidade, performance e aderência às regras de negócio.',
             'Criação e consumo de CDS Views e serviços OData, integrando o frontend SAP ao backend ABAP.',
-            'Implementação de regras de negócio e validações específicas do EHS em aplicações críticas do projeto.',
+            'Implementação de regras de negócio e validações específicas de EHS em aplicações críticas para o negócio.',
+            'Sustentação pós-implantação em ambiente produtivo: análise de incidentes, correções críticas e melhoria contínua, com comunicação direta com o cliente.',
           ],
         },
         {
@@ -132,7 +134,7 @@ export const translations = {
     },
     projects: {
       title: 'Código & Projetos no GitHub',
-      description: 'Meu trabalho atual em produção (VALE · EHS) é confidencial, mas você pode conferir exemplos de aplicações Fiori Elements e Fiori Freestyle que desenvolvi no meu GitHub.',
+      description: 'Meu trabalho atual no produto EHS em produção é confidencial, mas você pode conferir exemplos de aplicações Fiori Elements e Fiori Freestyle que desenvolvi no meu GitHub.',
       cta: 'Ver no GitHub',
     },
     contact: {
@@ -185,7 +187,7 @@ export const translations = {
     },
     about: {
       title: 'About Me',
-      bio: 'SAP ABAP & Fiori developer with experience on large-scale corporate projects, working mainly in S/4HANA environments with a focus on SAPUI5, Fiori Elements, CDS Views, OData and SAP integrations. Currently at Grupo Intelsis, on a strategic project for VALE in the EHS (Environment, Health and Safety) module, with Go Live planned for June 2026. I build custom solutions whenever SAP standard doesn’t meet business needs, working across both ABAP backend and Fiori/UI5 frontend.',
+      bio: 'SAP ABAP & Fiori developer with experience on large-scale corporate projects, working mainly in S/4HANA environments with a focus on SAPUI5, Fiori Elements, CDS Views, OData and SAP integrations. Currently at Grupo Intelsis, developing the company’s proprietary SAP EHS (Environment, Health and Safety) solution, deployed at a major mining client — I covered the full cycle from development through Go-Live and now handle support and continuous improvement in production. I also take part in migrating the company’s SAP portfolio to SAP BTP and in building new cloud applications on the platform. I build custom solutions whenever SAP standard doesn’t meet business needs, working across both ABAP backend and Fiori/UI5 frontend.',
       groupTitles: {
         core: 'Core SAP',
         backend: 'ABAP & Backend',
@@ -194,7 +196,7 @@ export const translations = {
       },
       stats: [
         { value: '4+', label: 'Years in SAP' },
-        { value: 'S/4HANA', label: 'VALE Project · EHS' },
+        { value: 'S/4HANA', label: 'EHS Product · Production' },
         { value: '3', label: 'SAP Certifications' },
       ],
     },
@@ -206,15 +208,17 @@ export const translations = {
           company: 'Grupo Intelsis',
           role: 'SAP ABAP / Fiori Developer',
           period: 'Feb/2025 — Present',
-          project: 'Project: VALE — EHS Module (S/4HANA)',
+          project: 'Proprietary SAP EHS Solution (S/4HANA)',
           isCurrent: true,
-          challenge: "The Challenge: SAP standard didn't cover EHS-specific business rules for VALE's operations — custom solutions had to be designed from scratch, spanning ABAP backend and Fiori frontend, without slipping the project's aggressive Go-Live timeline.",
+          challenge: "The Challenge: SAP standard didn't cover the EHS-specific business rules the client's operations required — custom solutions had to be designed from scratch, spanning ABAP backend and Fiori frontend, without slipping an aggressive Go-Live timeline.",
           bullets: [
-            'Working on a large-scale strategic project for VALE in an S/4HANA environment, EHS module, with Go Live planned for June 2026.',
+            "Development and evolution of Grupo Intelsis' proprietary SAP EHS solution, deployed at a major mining client in an S/4HANA environment — full cycle from development through Go-Live and into production support.",
+            "Migration of the company's SAP portfolio to SAP BTP and development of new applications on the cloud platform.",
             'Development of custom solutions for requirements not covered by SAP standard, working across ABAP backend and Fiori/UI5 frontend.',
             'Development of SAP Fiori/UI5 applications (Freestyle and Fiori Elements) focused on usability, performance, and adherence to business rules.',
             'Creation and consumption of CDS Views and OData services, integrating the SAP frontend with the ABAP backend.',
-            'Implementation of EHS-specific business rules and validations in critical project applications.',
+            'Implementation of EHS-specific business rules and validations in business-critical applications.',
+            'Post-implementation support in a live production environment: incident analysis, critical fixes and continuous improvement, with direct client communication.',
           ],
         },
         {
@@ -290,7 +294,7 @@ export const translations = {
     },
     projects: {
       title: 'Code & Projects on GitHub',
-      description: 'My current production work (VALE · EHS) is confidential, but you can check out sample Fiori Elements and Fiori Freestyle applications I’ve built on my GitHub.',
+      description: 'My current production work on the EHS product is confidential, but you can check out sample Fiori Elements and Fiori Freestyle applications I’ve built on my GitHub.',
       cta: 'View on GitHub',
     },
     contact: {
