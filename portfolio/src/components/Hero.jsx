@@ -1,11 +1,18 @@
 import React from 'react';
 import HeroImage from '../assets/matheus-foto.jpeg';
 import './Hero.css';
-import resumeFile from '../assets/SAP 2026 PT - Matheus Fagundes.pdf';
+import resumePt from '../assets/curriculo-matheus-fagundes-pt.pdf';
+import resumeEn from '../assets/curriculo-matheus-fagundes-en.pdf';
 import { useLanguage } from '../context/LanguageContext';
 
+const resumes = {
+  pt: { file: resumePt, name: 'Matheus_Fagundes_Curriculo_SAP.pdf' },
+  en: { file: resumeEn, name: 'Matheus_Fagundes_SAP_Resume.pdf' },
+};
+
 const Hero = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const resume = resumes[language] || resumes.pt;
 
   return (
     <div id="home" className='bg-paper-50 dark:bg-ink-900 text-ink-900 dark:text-white text-center pt-32 pb-16 px-6'>
@@ -60,8 +67,8 @@ const Hero = () => {
             </a>
 
             <a
-              href={resumeFile}
-              download="Matheus_Fagundes_Curriculo.pdf"
+              href={resume.file}
+              download={resume.name}
             >
               <button
                 className="bg-gradient-to-r from-accent-500 to-accent-400 text-ink-900 transform transition-transform duration-300 hover:scale-105 px-6 py-3 rounded-full font-medium shadow-lg shadow-accent-500/20"

@@ -27,7 +27,7 @@ export const translations = {
     },
     about: {
       title: 'Sobre Mim',
-      bio: 'Desenvolvedor SAP ABAP & Fiori com experiência em projetos corporativos de grande porte, atuando principalmente em ambientes S/4HANA com foco em SAPUI5, Fiori Elements, CDS Views, OData e integrações SAP. Atualmente no Grupo Intelsis, desenvolvendo a solução proprietária de SAP EHS (Environment, Health and Safety) da empresa, implantada em cliente de grande porte do setor de mineração — acompanhei o ciclo completo do desenvolvimento ao Go-Live e atuo hoje na sustentação e evolução em produção. Participo também da migração do portfólio SAP da empresa para o SAP BTP e da construção de novas aplicações cloud na plataforma. Desenvolvo soluções customizadas quando o standard SAP não atende à necessidade do negócio, atuando tanto no backend ABAP quanto no frontend Fiori/UI5.',
+      bio: 'Desenvolvedor SAP ABAP & Fiori com experiência em projetos corporativos de grande porte, atuando principalmente em ambientes S/4HANA com foco em SAPUI5, Fiori Elements, CDS Views, OData e integrações SAP. Atualmente no Grupo Intelsis, desenvolvendo a solução proprietária de SAP EHS (Environment, Health and Safety) da empresa, implantada em cliente de grande porte — acompanhei o ciclo completo do desenvolvimento ao Go-Live, em junho de 2026, e atuo hoje na sustentação e evolução em produção. Participo também da migração do portfólio SAP da empresa para o SAP BTP e da construção de novas aplicações cloud na plataforma. Desenvolvo soluções customizadas quando o standard SAP não atende à necessidade do negócio, atuando tanto no backend ABAP quanto no frontend Fiori/UI5.',
       groupTitles: {
         core: 'Core SAP',
         backend: 'ABAP & Backend',
@@ -56,7 +56,7 @@ export const translations = {
           isCurrent: true,
           challenge: 'O Desafio: o standard SAP não cobria as regras de negócio específicas de EHS exigidas pela operação do cliente — as soluções precisaram ser desenhadas do zero, do backend ABAP ao frontend Fiori, sem comprometer um cronograma de Go-Live agressivo.',
           bullets: [
-            'Desenvolvimento e evolução da solução proprietária de SAP EHS do Grupo Intelsis, implantada em cliente de grande porte do setor de mineração em ambiente S/4HANA — ciclo completo do desenvolvimento ao Go-Live e à sustentação em produção.',
+            'Desenvolvimento e evolução da solução proprietária de SAP EHS do Grupo Intelsis, implantada em cliente de grande porte em ambiente S/4HANA — ciclo completo do desenvolvimento ao Go-Live e à sustentação em produção.',
             'Migração do portfólio SAP da empresa para o SAP BTP e desenvolvimento de novas aplicações na plataforma cloud.',
             'Desenvolvimento de soluções customizadas para demandas não cobertas pelo standard SAP, atuando no backend ABAP e no frontend Fiori/UI5.',
             'Desenvolvimento de aplicações SAP Fiori/UI5 (Freestyle e Fiori Elements) com foco em usabilidade, performance e aderência às regras de negócio.',
@@ -186,13 +186,13 @@ export const translations = {
       tagline: 'UI5 & Fiori Elements · S/4HANA · SAP BTP — I build custom SAP solutions, from ABAP backend to Fiori frontend, on large-scale corporate projects.',
       badges: ['S/4HANA', 'SAP BTP', 'ABAP', 'Fiori & UI5', 'EHS'],
       talk: 'Contact Me',
-      resume: 'Download Resume (PT)',
+      resume: 'Download Resume',
       photoAlt: 'Matheus Fagundes, SAP ABAP & Fiori Developer',
       availability: 'Open to new opportunities',
     },
     about: {
       title: 'About Me',
-      bio: 'SAP ABAP & Fiori developer with experience on large-scale corporate projects, working mainly in S/4HANA environments with a focus on SAPUI5, Fiori Elements, CDS Views, OData and SAP integrations. Currently at Grupo Intelsis, developing the company’s proprietary SAP EHS (Environment, Health and Safety) solution, deployed at a major mining client — I covered the full cycle from development through Go-Live and now handle support and continuous improvement in production. I also take part in migrating the company’s SAP portfolio to SAP BTP and in building new cloud applications on the platform. I build custom solutions whenever SAP standard doesn’t meet business needs, working across both ABAP backend and Fiori/UI5 frontend.',
+      bio: 'SAP ABAP & Fiori developer with experience on large-scale corporate projects, working mainly in S/4HANA environments with a focus on SAPUI5, Fiori Elements, CDS Views, OData and SAP integrations. Currently at Grupo Intelsis, developing the company’s proprietary SAP EHS (Environment, Health and Safety) solution, deployed at a large enterprise client — I covered the full cycle from development through Go-Live in June 2026 and now handle support and continuous improvement in production. I also take part in migrating the company’s SAP portfolio to SAP BTP and in building new cloud applications on the platform. I build custom solutions whenever SAP standard doesn’t meet business needs, working across both ABAP backend and Fiori/UI5 frontend.',
       groupTitles: {
         core: 'Core SAP',
         backend: 'ABAP & Backend',
@@ -218,7 +218,7 @@ export const translations = {
           isCurrent: true,
           challenge: "The Challenge: SAP standard didn't cover the EHS-specific business rules the client's operations required — custom solutions had to be designed from scratch, spanning ABAP backend and Fiori frontend, without slipping an aggressive Go-Live timeline.",
           bullets: [
-            "Development and evolution of Grupo Intelsis' proprietary SAP EHS solution, deployed at a major mining client in an S/4HANA environment — full cycle from development through Go-Live and into production support.",
+            "Development and evolution of Grupo Intelsis' proprietary SAP EHS solution, deployed at a large enterprise client in an S/4HANA environment — full cycle from development through Go-Live and into production support.",
             "Migration of the company's SAP portfolio to SAP BTP and development of new applications on the cloud platform.",
             'Development of custom solutions for requirements not covered by SAP standard, working across ABAP backend and Fiori/UI5 frontend.',
             'Development of SAP Fiori/UI5 applications (Freestyle and Fiori Elements) focused on usability, performance, and adherence to business rules.',
